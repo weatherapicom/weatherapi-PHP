@@ -1,0 +1,32 @@
+{
+    "name": "apimatic/weatherapi",
+    "type": "library",
+    "description": " # Introduction  WeatherAPI.com provides access to weather and geo data via a JSON/XML restful API. It allows developers to create desktop, web and mobile applications using this data very easy.  We provide following data through our API:    * Real-time weather    * 10 day weather forecast    * Astronomy    * Time zone    * Location data    * Search or Autocomplete API    * NEW: Historical weather  # Getting Started  You need to [signup](https://www.weatherapi.com/signup.aspx) and then you can find your API key under [your account](https://www.weatherapi.com/login.aspx), and start using API right away!  If you find any features missing or have any suggestions, please [contact us](https://www.weatherapi.com/contact.aspx).  # Authentication  API access to the data is protected by an API key. If at anytime, you find the API key has become vulnerable, please regenerate the key using Regenerate button next to the API key.  Authentication to the WeatherAPI.com API is provided by passing your API key as request parameter through an API .    ##  key parameter   key=YOUR_API_KEY ",
+    "keywords": ["Weather API","API","SDK"],
+    "homepage": "https://apimatic.io",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIMatic SDK Generator",
+            "email": "support@apimatic.io",
+            "homepage": "https://apimatic.io",
+            "role": "API Tool"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "mashape/unirest-php": "~3.0.1",
+        "apimatic/jsonmapper": "~1.3.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^2.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "WeatherAPILib\\": "src/"
+        }
+    }
+}
